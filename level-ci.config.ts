@@ -6,4 +6,9 @@ export default {
  token: process.env.LEVEL_CI_TOKEN,
  server: "https://api.dev.userway.dev",
  reportPaths: ['./level-ci-reports']
+ override: {
+ 'main': {
+  scope: 'delta'
+  },
+ }
 } satisfies Config;
