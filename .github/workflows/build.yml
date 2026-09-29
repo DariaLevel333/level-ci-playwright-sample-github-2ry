@@ -37,7 +37,7 @@ jobs:
         with:
           secondary_repository_key: project-b
           branch: branch-ab
-          pull_request: 6
+          pull_request: ${{ github.event.pull_request.number }}
           commit_hash: ${{ github.sha }}
           token: ${{ secrets.LEVEL_CI_TOKEN }}
           report_paths: './level-ci-reports'
